@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+### Deskripsi Proyek
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project ini adalah aplikasi **Todo List** sederhana yang dibangun menggunakan **React** dan **TypeScript**. Aplikasi ini memungkinkan pengguna untuk melakukan operasi **CRUD (Create, Read, Update, Delete)** dasar pada daftar tugas mereka. Project ini terhubung dengan *REST API* untuk mengelola data tugas, menjadikannya contoh yang bagus untuk mempelajari bagaimana React dapat berinteraksi dengan *backend*.
 
-## Available Scripts
+Fitur utama:
 
-In the project directory, you can run:
+  * **Menambahkan tugas baru**: Pengguna dapat menambahkan tugas baru ke dalam daftar.
+  * **Melihat daftar tugas**: Semua tugas yang ada akan ditampilkan dalam daftar.
+  * **Mengedit tugas**: Pengguna dapat mengubah nama atau deskripsi dari tugas yang sudah ada.
+  * **Menghapus tugas**: Pengguna dapat menghapus tugas yang sudah selesai atau tidak diperlukan lagi.
 
-### `npm start`
+### Cara Menjalankan Proyek
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Untuk menjalankan proyek ini di komputer lokal Anda, ikuti langkah-langkah berikut:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1.  **Pastikan Anda memiliki Node.js dan npm terinstal.**
 
-### `npm test`
+2.  **Clone repositori ini ke komputer Anda:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone <URL_repositori_Anda>
+    ```
 
-### `npm run build`
+3.  **Masuk ke direktori proyek:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd <nama_direktori_proyek>
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4.  **Instal semua dependensi yang dibutuhkan:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+5.  **Jalankan aplikasi:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aplikasi akan berjalan dalam mode pengembangan dan dapat diakses di [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) di browser Anda. Halaman akan otomatis dimuat ulang jika Anda melakukan perubahan pada kode. Anda juga akan melihat *lint errors* di konsol.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Catatan**: Aplikasi ini membutuhkan *backend* API untuk berfungsi dengan baik. Pastikan *server backend* berjalan di `http://127.0.0.1:8000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Skrip yang Tersedia
 
-## Learn More
+Dalam direktori proyek, Anda dapat menjalankan:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * **`npm test`**: Meluncurkan *test runner* dalam mode *interactive watch*.
+  * **`npm run build`**: Membangun aplikasi untuk produksi ke folder `build`.
+  * **`npm run eject`**: **Operasi satu arah.** Menghapus dependensi build tunggal dan menyalin semua file konfigurasi ke proyek Anda. Gunakan ini jika Anda ingin kontrol penuh atas konfigurasi build.
